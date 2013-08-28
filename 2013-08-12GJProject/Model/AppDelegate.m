@@ -280,8 +280,8 @@
     NSString* serverName=[[[arr2 objectAtIndex:0] attributeForName:@"serName"] stringValue];
     
     if ([usr isEqualToString:@""]) {
-        usr=[[NSString alloc]initWithFormat:@"%@@%@",[[UIDevice currentDevice]uniqueIdentifier],serverName];
-        pwd=[usr substringToIndex:5];
+        usr= @"wcc16711";
+        pwd= @"12345";
     }
     
     
