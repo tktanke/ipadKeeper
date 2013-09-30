@@ -37,7 +37,8 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    
+    [self.closeBtn setAlpha:0];
+    [self.aboutView setAlpha:0];
 }
 
 - (void)didReceiveMemoryWarning

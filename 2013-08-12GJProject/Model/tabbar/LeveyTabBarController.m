@@ -220,8 +220,12 @@ static LeveyTabBarController *leveyTabBarController;
     {
         [selectedVC viewDidAppear:YES];
     }
+    else if(index == 3)
+    {
+        [selectedVC viewDidAppear:true];
+    }
     
-	selectedVC.view.frame = _transitionView.frame;
+	[selectedVC.view setFrame:_transitionView.frame];
 	if ([selectedVC.view isDescendantOfView:_transitionView]) 
 	{
 		[_transitionView bringSubviewToFront:selectedVC.view];
